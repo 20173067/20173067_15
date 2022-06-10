@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:cardBackgroundColor="#FFFFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/movieRanking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="영화 순위"
+                android:layout_gravity="center"
+                android:textColor="#FFFF0000"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                app:srcCompat="@drawable/movie"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/movieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="제목"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:maxLines="1"/>
+            <TextView
+                android:id="@+id/movieRankUpDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="순위 증감"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:maxLines="1"/>
+            <TextView
+                android:id="@+id/movieNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="신규영화"
+                android:textSize="10sp"
+                android:maxLines="1"/>
+            <TextView
+                android:id="@+id/peopleCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="관객 수"
+                android:textColor="#FF0000FF"
+                android:textSize="10sp"/>
+
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
